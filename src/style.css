@@ -1,0 +1,15 @@
+﻿*{margin:0;padding:0;}
+html,body{width:100%;}
+
+i标签栏, i内联框架盒子{
+    width:100%;
+    overflow: hidden;
+}
+
+iframe {
+    overflow: auto;
+    width: 100%;
+    border:none;
+}
+
+button {margin:0 10px;}

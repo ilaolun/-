@@ -1,0 +1,210 @@
+{
+    "project": {},
+    "files": {
+        "main.js": {
+            "name": "main.js",
+            "modules": {
+                "整页入口模块": 1
+            },
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "内联框架处理.js": {
+            "name": "内联框架处理.js",
+            "modules": {
+                "内联框架处理模块": 1
+            },
+            "classes": {
+                "$内联": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "通用方法.js": {
+            "name": "通用方法.js",
+            "modules": {
+                "通用函数模块": 1
+            },
+            "classes": {
+                "$通用": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "整页入口模块": {
+            "name": "整页入口模块",
+            "submodules": {},
+            "elements": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "main.js",
+            "line": 1,
+            "description": "没有全局变量\n用于协调各模块"
+        },
+        "内联框架处理模块": {
+            "name": "内联框架处理模块",
+            "submodules": {},
+            "elements": {},
+            "classes": {
+                "$内联": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "内联框架处理.js",
+            "line": 7,
+            "description": "仅有一个全局变量: $内联"
+        },
+        "通用函数模块": {
+            "name": "通用函数模块",
+            "submodules": {},
+            "elements": {},
+            "classes": {
+                "$通用": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "通用方法.js",
+            "line": 8,
+            "description": "会创建一个全局变量: $通用"
+        }
+    },
+    "classes": {
+        "$内联": {
+            "name": "$内联",
+            "shortname": "$内联",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "内联框架处理模块",
+            "namespace": "",
+            "file": "内联框架处理.js",
+            "line": 7,
+            "description": "本模块唯一的全局变量",
+            "static": 1
+        },
+        "$通用": {
+            "name": "$通用",
+            "shortname": "$通用",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "通用函数模块",
+            "namespace": "",
+            "file": "通用方法.js",
+            "line": 8,
+            "description": "本模块唯一的全局变量",
+            "static": 1
+        }
+    },
+    "elements": {},
+    "classitems": [
+        {
+            "file": "通用方法.js",
+            "line": 18,
+            "description": "无须参数",
+            "itemtype": "method",
+            "name": "$获取视口宽度",
+            "return": {
+                "description": "返回视口的宽度",
+                "type": "Number"
+            },
+            "class": "$通用",
+            "module": "通用函数模块"
+        },
+        {
+            "file": "通用方法.js",
+            "line": 34,
+            "description": "无须参数",
+            "itemtype": "method",
+            "name": "$获取视口高度",
+            "return": {
+                "description": "返回视口的高度",
+                "type": "Number"
+            },
+            "class": "$通用",
+            "module": "通用函数模块"
+        },
+        {
+            "file": "通用方法.js",
+            "line": 50,
+            "description": "仅支持在冒泡阶段添加，可以兼容旧版IE",
+            "itemtype": "method",
+            "name": "$绑定事件",
+            "params": [
+                {
+                    "name": "需要绑定事件的元素或者id",
+                    "description": "",
+                    "type": "Object|String"
+                },
+                {
+                    "name": "事件名称(不带on)",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "触发是需要调用的处理函数(在处理函数中须自行处理旧版ie全局event对象的情况)",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "无返回值",
+                "type": "Void"
+            },
+            "class": "$通用",
+            "module": "通用函数模块"
+        },
+        {
+            "file": "通用方法.js",
+            "line": 72,
+            "description": "可以兼容旧版IE",
+            "itemtype": "method",
+            "name": "$获取事件目标",
+            "params": [
+                {
+                    "name": "event对象",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "事件目标",
+                "type": "Object"
+            },
+            "class": "$通用",
+            "module": "通用函数模块"
+        },
+        {
+            "file": "通用方法.js",
+            "line": 82,
+            "description": "可以兼容旧版IE",
+            "itemtype": "method",
+            "name": "$取消事件默认行为",
+            "params": [
+                {
+                    "name": "event对象",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "无返回值",
+                "type": "Void"
+            },
+            "class": "$通用",
+            "module": "通用函数模块"
+        }
+    ],
+    "warnings": []
+}
